@@ -1,0 +1,8 @@
+name: MyModel
+port: model.py:MyModel
+fs: 125
+embedding_dim: 16
+init: {}
+# For pretrained weights, use:
+# init:
+#   ckpt_path: ../checkpoints/my_encoder.pt

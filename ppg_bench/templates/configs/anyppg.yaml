@@ -1,0 +1,7 @@
+name: AnyPPG
+port: ppg_bench.encoders.anyppg:AnyPPGPort
+fs: 125
+embedding_dim: 512
+init:
+  source_root: ../external/AnyPPG
+  ckpt_path: ../checkpoints/anyppg_ckpt.pth

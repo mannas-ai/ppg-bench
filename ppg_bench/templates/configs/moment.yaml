@@ -1,0 +1,6 @@
+name: MOMENT-1-small
+port: ppg_bench.encoders.moment:MOMENTPort
+fs: 64
+embedding_dim: 512
+init:
+  ckpt_path: ../checkpoints/MOMENT-1-small

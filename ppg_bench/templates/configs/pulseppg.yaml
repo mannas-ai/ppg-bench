@@ -1,0 +1,6 @@
+name: PulsePPG
+port: ppg_bench.encoders.pulseppg:PulsePPGPort
+fs: 50
+embedding_dim: 512
+init:
+  ckpt_path: ../checkpoints/checkpoint_best.pkl

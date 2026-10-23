@@ -1,0 +1,7 @@
+name: SigmaPPG
+port: ppg_bench.encoders.sigmappg:SigmaPPGPort
+fs: 50
+embedding_dim: 360
+init:
+  source_root: ../external/SigmaPPG
+  ckpt_path: ../checkpoints/sigma.pth

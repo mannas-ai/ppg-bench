@@ -1,0 +1,5 @@
+name: PRVCtrl
+port: ppg_bench.encoders.prv:PRVCtrlPort
+fs: 100
+embedding_dim: 8
+init: {}

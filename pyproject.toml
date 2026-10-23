@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ppg-bench"
+version = "0.1.0"
+description = "A compact benchmark for PPG encoders"
+readme = "README.md"
+license = "GPL-3.0-only AND BSD-3-Clause AND MIT"
+license-files = ["LICENSE", "ppg_bench/encoders/NOTICE"]
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4,<1.10",
+  "torch>=2.3", "optuna>=3.6", "PyYAML>=6",
+]
+
+[project.optional-dependencies]
+rf = ["cuml-cu12==26.6.0", "cupy-cuda12x"]
+encoders = ["einops>=0.8", "timm==0.9.16"]
+moment = ["einops>=0.8", "transformers==4.40.2", "huggingface-hub==0.24.0", "safetensors"]
+
+[project.scripts]
+ppg-bench = "ppg_bench.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["ppg_bench*"]
+
+[tool.setuptools.package-data]
+"ppg_bench.encoders" = ["NOTICE"]
+"ppg_bench" = ["templates/configs/*.yaml", "templates/examples/*.py", "templates/examples/*.yaml"]

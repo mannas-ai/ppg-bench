@@ -1,0 +1,6 @@
+name: PaPaGei-P
+port: ppg_bench.encoders.papagei:PaPaGei_P_Port
+fs: 125
+embedding_dim: 512
+init:
+  ckpt_path: ../checkpoints/papagei_p.pt
