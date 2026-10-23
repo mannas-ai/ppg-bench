@@ -1,9 +1,31 @@
-# PPG-Bench - A Unified Evaluation Framework for PPG Foundation Models
+# PPG-Bench: A Unified Evaluation Framework for PPG Foundation Models
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.13435"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b" alt="Paper: arXiv"></a>
+  <a href="https://github.com/mannas-ai/ppg-bench"><img src="https://img.shields.io/badge/Code-GitHub-76b900" alt="Code: GitHub"></a>
+  <a href="https://pypi.org/project/ppg-bench/"><img src="https://img.shields.io/badge/Package-PyPI-007ec6" alt="Package: PyPI"></a>
+  <a href="#1-download-datasets"><img src="https://img.shields.io/badge/Datasets-9_Curated-007ec6" alt="Datasets: 9 Curated"></a>
+  <a href="#license"><img src="https://img.shields.io/badge/License-GPL_v3-007ec6" alt="License: GPL v3"></a>
+</p>
+
+<p align="center">
+  <strong><em>A unified benchmark for evaluating PPG foundation models across nine datasets and 17 primary tasks</em></strong>
+</p>
+
+<p align="center">
+  <a href="#install">📦 Install</a> ·
+  <a href="#1-download-datasets">📚 Datasets</a> ·
+  <a href="#2-quickstart-your-own-model">🚀 Quickstart</a> ·
+  <a href="#3-run-a-task-a-dataset-or-everything">🏃 Run benchmarks</a> ·
+  <a href="#protocol-and-results">📊 Protocol &amp; results</a> ·
+  <a href="#license">⚖️ License</a>
+</p>
+
+---
 
 Official code for PPG-Bench. Benchmark your PPG encoder on nine datasets with linear probes, random forests,
 frozen MLP probes and end-to-end finetuning.
 
-[Paper](https://arxiv.org/abs/2610.13435)
 ## Install
 
 Use Python 3.11 or newer. Create an environment:
